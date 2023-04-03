@@ -1,0 +1,25 @@
+{
+  "name": "cli-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node contacts.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snackli17/CLI-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/snackli17/CLI-app/issues"
+  },
+  "homepage": "https://github.com/snackli17/CLI-app#readme",
+  "dependencies": {
+    "nodemon": "^2.0.22",
+    "uuid": "^9.0.0"
+  }
+}
