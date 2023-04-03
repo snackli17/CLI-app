@@ -46,5 +46,4 @@ const addContact = async(name, email, phone) => {
     await fs.writeFile(contactsPath, JSON.stringify(allContacts));
 }
 
-addContact('sff', 'sfsf',  325)
 
