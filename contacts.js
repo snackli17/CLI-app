@@ -5,13 +5,11 @@ const contactsDir = path.dirname('./contacts.js');
 const contactsPath = path.join(contactsDir, 'db/contacts.json')
 
 
-
 const listContacts = async () => {
     const dataString = await fs.readFile(contactsPath);
     const data = JSON.parse(dataString);
     return data;
 }
-
 
 const getContactById = async (contactId) => {
     const allContacts = await listContacts();
@@ -33,8 +31,7 @@ const removeContact = async (contactId) => {
 }
 
 
-
-const addContact = async(name, email, phone) => {
+const addContact = async (name, email, phone) => {
     const newContact = {
         id: uuid.v4(),
         email: email,
@@ -47,3 +44,6 @@ const addContact = async(name, email, phone) => {
 }
 
 
+module.exports = {
+    listContacts, getContactById, removeContact, addContact
+}
